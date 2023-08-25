@@ -15,20 +15,20 @@ const unit =
         shape: Shape
     ) =>
     ""
-    +`{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^${n} ) mod 2 }} | 1\n`
+    +`{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^${n} ) mod 2 }} | 1 <!--\n-->`
     +`    | <div style="margin: ${80*y-100}px 0 0 ${80*x}px;">`
-        +`[[그림:menslengeus-${shapeToNum(shape)}.svg]]</div>\n`
+        +`[[그림:menslengeus-${shapeToNum(shape)}.svg]]</div> <!--\n-->`
     +`}}`
 
 const units =
     (as: [x: number, y: number, shape: Shape][]) =>
     as  .map(([x, y, shape], n) => unit(n, x, y, shape))
-        .join("\n")
+        .join("<!--\n-->")
 
 const result =
 `<onlyinclude>
-<div style="width: 100px; height: 100px;"> </div>
-${units([
+<div style="width: 100px; height: 100px;"> </div><!--
+-->${units([
     [0, 0, "-"],
     [1, 0, "-"],
     [0, 0, "|"],
