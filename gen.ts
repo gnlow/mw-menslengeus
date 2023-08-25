@@ -17,7 +17,8 @@ const unit =
     ""
     +`{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^${n} ) mod 2 }} | 1 <!--\n-->`
     +`    | <div style="margin: ${80*y-100}px 0 0 ${80*x}px;">`
-        +`[[그림:menslengeus-${shapeToNum(shape)}.svg]]</div> <!--\n-->`
+        +`[[그림:menslengeus-${shapeToNum(shape)}.svg|alt=${shape.replace("|", "{{!}}")}]]`
+        +`</div> <!--\n-->`
     +`}}`
 
 const units =
