@@ -56,7 +56,7 @@ const result =
 </onlyinclude>
 
 ---
-{{:연습장:Gnlow/Expr|3}}
+{{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|635371}}</nowiki>}}
 `
 
 await Deno.writeTextFile("main.mw", result)
