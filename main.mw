@@ -1,0 +1,12 @@
+<onlyinclude>
+<div style="width: 100px; height: 100px;"> </div>
+{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^0 ) mod 2  }} | 1
+    | <div style="margin: -100px 0 0 0;">[[그림:menslengeus-1.svg]]</div>
+}}
+{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^1 ) mod 2  }} | 1
+    | <div style="margin: -100px 0 0 80px;">[[그림:menslengeus-1.svg]]</div>
+}}
+</onlyinclude>
+
+---
+{{:연습장:Gnlow/Expr|3}}
