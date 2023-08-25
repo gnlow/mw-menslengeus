@@ -31,34 +31,34 @@
 -->    | <div style="margin: -20px 0 0 0px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^10 ) mod 2 }} | 1 <!--
--->    | <div style="margin: -20px 0 0 80px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
+-->    | <div style="margin: -100px 0 0 80px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^11 ) mod 2 }} | 1 <!--
--->    | <div style="margin: -20px 0 0 0px;">[[그림:menslengeus-16.svg|alt={{!}}]]</div> <!--
+-->    | <div style="margin: -100px 0 0 0px;">[[그림:menslengeus-16.svg|alt={{!}}]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^12 ) mod 2 }} | 1 <!--
--->    | <div style="margin: -20px 0 0 0px;">[[그림:menslengeus-4.svg|alt=\]]</div> <!--
+-->    | <div style="margin: -100px 0 0 0px;">[[그림:menslengeus-4.svg|alt=\]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^13 ) mod 2 }} | 1 <!--
--->    | <div style="margin: -20px 0 0 0px;">[[그림:menslengeus-8.svg|alt=/]]</div> <!--
+-->    | <div style="margin: -100px 0 0 0px;">[[그림:menslengeus-8.svg|alt=/]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^14 ) mod 2 }} | 1 <!--
--->    | <div style="margin: -20px 0 0 80px;">[[그림:menslengeus-16.svg|alt={{!}}]]</div> <!--
+-->    | <div style="margin: -100px 0 0 80px;">[[그림:menslengeus-16.svg|alt={{!}}]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^15 ) mod 2 }} | 1 <!--
--->    | <div style="margin: -20px 0 0 80px;">[[그림:menslengeus-4.svg|alt=\]]</div> <!--
+-->    | <div style="margin: -100px 0 0 80px;">[[그림:menslengeus-4.svg|alt=\]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^16 ) mod 2 }} | 1 <!--
--->    | <div style="margin: -20px 0 0 80px;">[[그림:menslengeus-8.svg|alt=/]]</div> <!--
+-->    | <div style="margin: -100px 0 0 80px;">[[그림:menslengeus-8.svg|alt=/]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^17 ) mod 2 }} | 1 <!--
--->    | <div style="margin: -20px 0 0 160px;">[[그림:menslengeus-16.svg|alt={{!}}]]</div> <!--
+-->    | <div style="margin: -100px 0 0 160px;">[[그림:menslengeus-16.svg|alt={{!}}]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^18 ) mod 2 }} | 1 <!--
--->    | <div style="margin: 60px 0 0 0px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
+-->    | <div style="margin: -20px 0 0 0px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^19 ) mod 2 }} | 1 <!--
--->    | <div style="margin: 60px 0 0 80px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
+-->    | <div style="margin: -100px 0 0 80px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
 -->}}
 </onlyinclude>
 

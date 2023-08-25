@@ -23,7 +23,9 @@ const unit =
 
 const units =
     (as: [x: number, y: number, shape: Shape][]) =>
-    as  .map(([x, y, shape], n) => unit(n, x, y, shape))
+    as  .map(([x, y, shape], n, l) =>
+            unit(n, x, y-(l[n-1]?.[1] || 0), shape)
+        )
         .join("<!--\n-->")
 
 const result =
