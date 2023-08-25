@@ -1,5 +1,13 @@
 type Shape = "-" | "|" | "\\" | "/"
 
+const prop = {
+    n: "{{{1|1}}}",
+    size: "{{{size|100}}}",
+    gap: "{{#expr: {{{size|100}}} * 0.8 }}"
+}
+
+const mul = (...xs: (string | number)[]) => `{{#expr: ${xs.join(" * ")} }}`
+
 const shapeToNum = (shape: Shape) => ({
     "-": "1",
     "|": "4",
@@ -14,9 +22,9 @@ const unit =
         shape: Shape
     ) =>
     ""
-    +`{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^${n} ) mod 2 }} | 1 <!--\n-->`
-    +`    | <div style="margin: -100px 0 0 ${80*x}px;">`
-        +`[[그림:menslengeus-${shapeToNum(shape)}.svg|alt=${shape.replace("|", "{{!}}")}]]`
+    +`{{#ifeq: {{#expr: floor( ${prop.n} / 2^${n} ) mod 2 }} | 1 <!--\n-->`
+    +`    | <div style="margin: -${prop.size}px 0 0 ${mul(0.8, prop.size, x)}px;">`
+        +`[[그림:menslengeus-${shapeToNum(shape)}.svg|alt=${shape.replace("|", "{{!}}")}]|${prop.size}px]]`
         +`</div> <!--\n-->`
     +`}}`
 
@@ -26,7 +34,7 @@ const units =
         return as
             .map(a => {
                 if (a == "\n") {
-                    return `<div style="width: 100px; height: 100px; margin: -20px 0 0 0;"> </div>`
+                    return `<div style="width: ${prop.size}px; height: ${prop.size}px; margin: -${mul(0.2, prop.size)}px 0 0 0;"> </div>`
                 } else {
                     const [x, shape] = a
                     return unit(n++, x, shape)
@@ -36,7 +44,7 @@ const units =
     }
 const result =
 `<onlyinclude>
-<div style="width: 100px; height: 100px;"> </div><!--
+<div style="width: ${prop.size}px; height: ${prop.size}px;"> </div><!--
 -->${units([
     [0, "-"],
     [1, "-"],
@@ -65,7 +73,7 @@ const result =
 
 ---
 {{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|364896}}</nowiki>}}
-{{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|1048575}}</nowiki>}}
+{{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|1048575|size=50}}</nowiki>}}
 `
 
 await Deno.writeTextFile("main.mw", result)
