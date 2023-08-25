@@ -44,6 +44,7 @@ const units =
     }
 const result =
 `<onlyinclude>
+<div style="margin: 0 -${mul(0.8, prop.size)}px -${mul(0.8, prop.size)}px 0;">
 <div style="width: ${prop.size}px; height: ${prop.size}px;"> </div><!--
 -->${units([
     [0, "-"],
@@ -69,9 +70,11 @@ const result =
     [0, "-"],
     [1, "-"],
 ])}
+</div>
 </onlyinclude>
 
----
+이 틀은 [https://github.com/gnlow/mw-menslengeus/blob/main/gen.ts 스크립트]를 이용해 생성되었습니다.<br>
+size는 px단위이며, 기본값은 100입니다.
 {{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|364896}}</nowiki>}}
 {{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|1048575|size=50}}</nowiki>}}
 `

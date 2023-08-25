@@ -1,4 +1,5 @@
 <onlyinclude>
+<div style="margin: 0 -{{#expr: 0.8 * {{{size|100}}} }}px -{{#expr: 0.8 * {{{size|100}}} }}px 0;">
 <div style="width: {{{size|100}}}px; height: {{{size|100}}}px;"> </div><!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^0 ) mod 2 }} | 1 <!--
 -->    | <div style="margin: -{{{size|100}}}px 0 0 {{#expr: 0.8 * {{{size|100}}} * 0 }}px;">[[그림:menslengeus-1.svg|alt=-]|{{{size|100}}}px]]</div> <!--
@@ -62,8 +63,10 @@
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^19 ) mod 2 }} | 1 <!--
 -->    | <div style="margin: -{{{size|100}}}px 0 0 {{#expr: 0.8 * {{{size|100}}} * 1 }}px;">[[그림:menslengeus-1.svg|alt=-]|{{{size|100}}}px]]</div> <!--
 -->}}
+</div>
 </onlyinclude>
 
----
+이 틀은 [https://github.com/gnlow/mw-menslengeus/blob/main/gen.ts 스크립트]를 이용해 생성되었습니다.<br>
+size는 px단위이며, 기본값은 100입니다.
 {{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|364896}}</nowiki>}}
-{{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|1048575}}</nowiki>}}
+{{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|1048575|size=50}}</nowiki>}}
