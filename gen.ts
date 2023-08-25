@@ -1,10 +1,10 @@
-type Shape = "-" | "\\" | "/" | "|"
+type Shape = "-" | "|" | "\\" | "/"
 
 const shapeToNum = (shape: Shape) => ({
     "-": "1",
-    "\\": "4",
-    "/": "8",
-    "|": "16"
+    "|": "4",
+    "\\": "8",
+    "/": "16",
 }[shape])
 
 const unit =
