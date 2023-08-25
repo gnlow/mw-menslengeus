@@ -26,9 +26,9 @@
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^8 ) mod 2 }} | 1 <!--
 -->    | <div style="margin: -100px 0 0 160px;">[[그림:menslengeus-4.svg|alt={{!}}]]</div> <!--
--->}}<!--
+-->}}<div style="width: 100px; height: 100px; margin: -20px 0 0 0;"> </div><!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^9 ) mod 2 }} | 1 <!--
--->    | <div style="margin: -20px 0 0 0px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
+-->    | <div style="margin: -100px 0 0 0px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^10 ) mod 2 }} | 1 <!--
 -->    | <div style="margin: -100px 0 0 80px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
@@ -53,9 +53,9 @@
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^17 ) mod 2 }} | 1 <!--
 -->    | <div style="margin: -100px 0 0 160px;">[[그림:menslengeus-4.svg|alt={{!}}]]</div> <!--
--->}}<!--
+-->}}<div style="width: 100px; height: 100px; margin: -20px 0 0 0;"> </div><!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^18 ) mod 2 }} | 1 <!--
--->    | <div style="margin: -20px 0 0 0px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
+-->    | <div style="margin: -100px 0 0 0px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
 -->}}<!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^19 ) mod 2 }} | 1 <!--
 -->    | <div style="margin: -100px 0 0 80px;">[[그림:menslengeus-1.svg|alt=-]]</div> <!--
@@ -63,4 +63,5 @@
 </onlyinclude>
 
 ---
-{{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|635371}}</nowiki>}}
+{{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|364896}}</nowiki>}}
+{{코드 보여주기||<nowiki>{{:연습장:Gnlow/Expr|1048575}}</nowiki>}}
