@@ -21,16 +21,23 @@ const unit =
     +`}}`
 
 const units =
-    (start: number, as: [x: number, shape: Shape][]) =>
-    as  .map(([x, shape], n) =>
-            unit(start+n, x, shape)
-        )
-        .join("<!--\n-->")
-
+    (as: ([x: number, shape: Shape] | "\n")[]) => {
+        let n = 0
+        return as
+            .map(a => {
+                if (a == "\n") {
+                    return `<div style="width: 100px; height: 100px; margin: -20px 0 0 0;"> </div>`
+                } else {
+                    const [x, shape] = a
+                    return unit(n++, x, shape)
+                }
+            })
+            .join("<!--\n-->")
+    }
 const result =
 `<onlyinclude>
 <div style="width: 100px; height: 100px;"> </div><!--
--->${units(0,[
+-->${units([
     [0, "-"],
     [1, "-"],
     [0, "|"],
@@ -40,8 +47,7 @@ const result =
     [1, "\\"],
     [1, "/"],
     [2, "|"],
-])}<div style="width: 100px; height: 100px; margin: -20px 0 0 0;"> </div><!--
--->${units(9,[
+    "\n",
     [0, "-"],
     [1, "-"],
     [0, "|"],
@@ -51,8 +57,7 @@ const result =
     [1, "\\"],
     [1, "/"],
     [2, "|"],
-])}<div style="width: 100px; height: 100px; margin: -20px 0 0 0;"> </div><!--
--->${units(18,[
+    "\n",
     [0, "-"],
     [1, "-"],
 ])}
