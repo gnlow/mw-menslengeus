@@ -44,7 +44,11 @@ const units =
     }
 const result =
 `<onlyinclude>
-<div style="margin: 0 -${mul(0.8, prop.size)}px -${mul(0.8, prop.size)}px 0;">
+<div style="
+    margin: 0 -${mul(0.8, prop.size)}px -${mul(0.8, prop.size)}px 0;
+    display: inline-block;
+    vertical-align: middle;
+">
 <div style="width: ${prop.size}px; height: ${prop.size}px;"> </div><!--
 -->${units([
     [0, "-"],

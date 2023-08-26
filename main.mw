@@ -1,5 +1,9 @@
 <onlyinclude>
-<div style="margin: 0 -{{#expr: 0.8 * {{{size|100}}} }}px -{{#expr: 0.8 * {{{size|100}}} }}px 0;">
+<div style="
+    margin: 0 -{{#expr: 0.8 * {{{size|100}}} }}px -{{#expr: 0.8 * {{{size|100}}} }}px 0;
+    display: inline-block;
+    vertical-align: middle;
+">
 <div style="width: {{{size|100}}}px; height: {{{size|100}}}px;"> </div><!--
 -->{{#ifeq: {{#expr: floor( {{{1|1}}} / 2^0 ) mod 2 }} | 1 <!--
 -->    | <div style="margin: -{{{size|100}}}px 0 0 {{#expr: 0.8 * {{{size|100}}} * 0 }}px;">[[그림:menslengeus-1.svg|alt=-]|{{{size|100}}}px]]</div> <!--
